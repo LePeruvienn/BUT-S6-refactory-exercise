@@ -20,8 +20,6 @@ int main() {
 	int pos1,pos2;
 
 	pos1 = pos2 =somme(QUANTITE);
-
-	int n, i;
 	
 	//boucle principale
 	while (ok){
