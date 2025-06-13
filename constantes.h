@@ -2,6 +2,7 @@
 #define CONSTANTES_H_INCLUDED
 
 #include <vector>
+#include <string>
 
 using namespace std;
 
