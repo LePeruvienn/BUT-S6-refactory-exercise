@@ -1,6 +1,26 @@
 #include "joueurs.h"
 #include "fonctions.h"
 
+void joueur1(vector<int> &sentier,const vector<int>& Valeur,vector<int> &j1,const vector<int> &j2,int &i1, int i2){
+
+	int n;
+	do{
+		cout << "le joueur 1 avance de combien de case ?\t";
+		cin >> n;
+	} 
+
+	while(n<0 || n>i1);
+		 i1-=n;
+
+	if (sentier[i1]>0) j1[sentier[i1]]++;
+
+	sentier[i1]=VIDE;
+
+	int i=(i1>i2?i1:i2);
+
+	supprime(sentier,sentier.size()-i);
+}
+
 //niveau 3
 void joueur2(vector<int> &sentier, const vector<int>& Valeur, const vector<int>&  j1,vector<int> &j2,int i1, int &i2){
 	int n=(i2>0?1:0);
